@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            width: 100vw;
+            margin: 0;
+            padding: 0;
+            background: palegoldenrod;
+        }
+        header{
+            width: 100vw;
+            height: 50px;
+            background: #ffc728;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+        }
+        h2{
+            font-size: 30px;
+            font-family: 'zilla slab', sans-serif;
+            text-align: center;
+            color: #fff;
+        }
+        .cards-containers{
+            width: 100vw;
+            height: 100%;
+            padding: 20px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            gap: 25px;
+            overflow-x: hidden;
+        }
+        .container{
+            position: relative;
+            width: 250px;
+            height: 350px;
+        }
+        .card{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            transform-style: preserve-3d;
+            transition: all 1.2s ease;
+            
+        }
+
+        .card:hover {
+            transform: rotateY(180deg);
+        }
+
+        .front{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            background: #ffc728;
+            color: #333;
+            text-align: center;
+            font-family: 'zilla slab', sans-serif;
+            border-radius: 20px;
+            font-size: 18px;
+            font-weight: bold;
+            box-shadow: 0px 3px 18px 3px rgb(0, 0, 0, 0.2);
+            overflow: hidden;
+        }
+        .front img{
+            width: 100%;
+        }
+
+        .back{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            background: #5fcf80;
+            color: #fff;
+            transform: rotateY(180deg);
+            text-align: center;
+            font-family: 'zilla slab', sans-serif;
+            border-radius: 20px;
+            font-size: 18px;
+            font-weight: bold;
+            box-shadow: 0px 3px 18px 3px rgb(0, 0, 0, 0.2);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .back img{
+            width: 100%;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <h2>MEMORY GAME</h2>
+    </header>
+    <div class="cards-containers">
+
+        <div class="container">
+            <div class="card">
+                <div class="front">
+                    <img src="https://images.pexels.com/photos/1203808/pexels-photo-1203808.jpeg?auto=compress&cs=tinysrgb&w=600" alt="map">
+                    MEMORY
+                </div>
+                <div class="back">
+                    <img src="https://images.pexels.com/photos/416160/pexels-photo-416160.jpeg?auto=compress&cs=tinysrgb&w=600" alt="cat1">
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="container">
+            <div class="card">
+                <div class="front">
+                    <img src="https://images.pexels.com/photos/1203808/pexels-photo-1203808.jpeg?auto=compress&cs=tinysrgb&w=600" alt="map">
+                    MEMORY
+                </div>
+                <div class="back">
+                    <img src="https://images.pexels.com/photos/96938/pexels-photo-96938.jpeg?auto=compress&cs=tinysrgb&w=600" alt="cat2">
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="container">
+            <div class="card">
+                <div class="front">
+                    <img src="https://images.pexels.com/photos/1203808/pexels-photo-1203808.jpeg?auto=compress&cs=tinysrgb&w=600" alt="map">
+                    MEMORY
+                </div>
+                <div class="back">
+                    <img src="https://images.pexels.com/photos/2558605/pexels-photo-2558605.jpeg?auto=compress&cs=tinysrgb&w=600" alt="cat3">
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="container">
+            <div class="card">
+                <div class="front">
+                    <img src="https://images.pexels.com/photos/1203808/pexels-photo-1203808.jpeg?auto=compress&cs=tinysrgb&w=600" alt="map">
+                    MEMORY
+                </div>
+                <div class="back">
+                    <img src="https://images.pexels.com/photos/236606/pexels-photo-236606.jpeg?auto=compress&cs=tinysrgb&w=600" alt="cat4">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="card">
+                <div class="front">
+                    <img src="https://images.pexels.com/photos/1203808/pexels-photo-1203808.jpeg?auto=compress&cs=tinysrgb&w=600" alt="map">
+                    MEMORY
+                </div>
+                <div class="back">
+                    <img src="https://images.pexels.com/photos/248280/pexels-photo-248280.jpeg?auto=compress&cs=tinysrgb&w=600" alt="cat5">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="card">
+                <div class="front">
+                    <img src="https://images.pexels.com/photos/1203808/pexels-photo-1203808.jpeg?auto=compress&cs=tinysrgb&w=600" alt="map">
+                    MEMORY
+                </div>
+                <div class="back">
+                    <img src="https://images.pexels.com/photos/96938/pexels-photo-96938.jpeg?auto=compress&cs=tinysrgb&w=600" alt="cat2">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="card">
+                <div class="front">
+                    <img src="https://images.pexels.com/photos/1203808/pexels-photo-1203808.jpeg?auto=compress&cs=tinysrgb&w=600" alt="map">
+                    MEMORY
+                </div>
+                <div class="back">
+                    <img src="https://images.pexels.com/photos/236606/pexels-photo-236606.jpeg?auto=compress&cs=tinysrgb&w=600" alt="cat4">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="card">
+                <div class="front">
+                    <img src="https://images.pexels.com/photos/1203808/pexels-photo-1203808.jpeg?auto=compress&cs=tinysrgb&w=600" alt="map">
+                    MEMORY
+                </div>
+                <div class="back">
+                    <img src="https://images.pexels.com/photos/416160/pexels-photo-416160.jpeg?auto=compress&cs=tinysrgb&w=600" alt="cat1">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="card">
+                <div class="front">
+                    <img src="https://images.pexels.com/photos/1203808/pexels-photo-1203808.jpeg?auto=compress&cs=tinysrgb&w=600" alt="map">
+                    MEMORY
+                </div>
+                <div class="back">
+                    <img src="https://images.pexels.com/photos/1183434/pexels-photo-1183434.jpeg?auto=compress&cs=tinysrgb&w=600" alt="cat6">
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="container">
+            <div class="card">
+                <div class="front">
+                    <img src="https://images.pexels.com/photos/1203808/pexels-photo-1203808.jpeg?auto=compress&cs=tinysrgb&w=600" alt="map">
+                    MEMORY
+                </div>
+                <div class="back">
+                    <img src="https://images.pexels.com/photos/248280/pexels-photo-248280.jpeg?auto=compress&cs=tinysrgb&w=600" alt="cat5">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="card">
+                <div class="front">
+                    <img src="https://images.pexels.com/photos/1203808/pexels-photo-1203808.jpeg?auto=compress&cs=tinysrgb&w=600" alt="map">
+                    MEMORY
+                </div>
+                <div class="back">
+                    <img src="https://images.pexels.com/photos/2558605/pexels-photo-2558605.jpeg?auto=compress&cs=tinysrgb&w=600" alt="cat3">
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="card">
+                <div class="front">
+                    <img src="https://images.pexels.com/photos/1203808/pexels-photo-1203808.jpeg?auto=compress&cs=tinysrgb&w=600" alt="map">
+                    MEMORY
+                </div>
+                <div class="back">
+                    <img src="https://images.pexels.com/photos/1183434/pexels-photo-1183434.jpeg?auto=compress&cs=tinysrgb&w=600" alt="cat6">
+                </div>
+            </div>
+        </div>
+
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,56 @@
+*{
+    padding: 0;
+    margin: 0;
+    /*box-sizing: border-box;*/
+}
+
+
+section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div{
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    height: 300px;
+    width: 80px;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    padding-bottom: 5px;
+    background: whitesmoke;
+    border-radius: 0  0 7px 7px; 
+    border: 2px solid black;
+    margin: -1px;
+    z-index: 1;
+}
+
+button:nth-child(even) {
+    background: black;
+    color: white;
+    height: 180px;
+    width: 45px;
+    margin-left: -22px;
+    margin-right: -22px;
+    z-index: 2;
+}
+
+button:hover{
+    background-color: orangered;
+}
+button:active{
+    background-color: red;
+}
+
+div button:nth-child(even):hover{
+    background-color: brown;
+}
+div button:nth-child(even):active{
+    background-color: maroon;
+}

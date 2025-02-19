@@ -1,0 +1,48 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html{
+    font-size: 65.5%; /*manejar rem*/
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div{
+    display: flex;
+    align-items: center;
+}
+
+#one{
+    background: grey;
+    width: 30rem;
+    height: 40rem;
+    border-radius: 1rem;
+    border: 0.2rem solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+p{
+    width: 20rem;
+    height: 8rem;
+    /*border: 0.2rem solid black;*/
+    text-align: center;
+}
+#two{
+    width: 20rem;
+    height: 5rem;
+    background: red;
+    border-radius: 1rem;
+    border: 0.2rem solid black;
+    position: relative;
+    left: -25rem;
+    top: -20rem;
+}

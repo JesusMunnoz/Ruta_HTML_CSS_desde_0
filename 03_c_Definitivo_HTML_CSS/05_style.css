@@ -1,0 +1,62 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html{
+    font-size: 65.5%; /*manejar rem*/
+}
+:root{
+    --white: #ffffff;
+    --black: #000000;
+    --very-light-pink: #c7c7c7;
+    --text-input-field: #f7f7f7;
+    --hospital-green: #acd9b2;
+
+    --green: #DDEB9D;
+    --darkGreen: #A0C878;
+    --blue: #27667B;
+    --darkBlue: #143D60;
+
+    --sm: 14px;
+    --md: 16px;
+    --lg: 18px;
+}
+
+body{
+    font-size: 1.6rem;
+}
+.container{
+    border: 0.3rem solid black;
+    display: flex;
+    flex-wrap: wrap;
+}
+.box{
+    height: 10rem;
+    flex-basis: 10rem;
+    flex-grow: 1;
+}
+
+.box1{
+    background: blue;
+}
+
+.box2{
+    background: blueviolet;
+}
+
+.box3{
+    background: burlywood;
+}
+
+.box4{
+    background: cadetblue;
+}
+
+.box5{
+    background: coral;
+}
+.box6{
+    background: salmon;
+}
+

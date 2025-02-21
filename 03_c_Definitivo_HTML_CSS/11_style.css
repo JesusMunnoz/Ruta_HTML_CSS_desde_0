@@ -1,0 +1,46 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Quicksand", serif;
+}
+html{
+    font-size: 65.5%; /*manejar rem*/
+}
+:root{
+    --white: #ffffff;
+    --black: #000000;
+    --very-light-pink: #c7c7c7;
+    --text-input-field: #f7f7f7;
+    --hospital-green: #acd9b2;
+
+    --green: #DDEB9D;
+    --darkGreen: #A0C878;
+    --blue: #27667B;
+    --darkBlue: #143D60;
+
+    --primary-color:#003476;
+    --secondary-color:#b4d2f7;
+    --header-size: 4rem;
+    --font: 1.8rem;
+
+    --sm: 14px;
+    --md: 16px;
+    --lg: 18px;
+}
+
+
+img{
+    width: 400px;
+}
+
+
+
+@media  (min-width:600px){
+
+
+}
+
+@media  (min-width:800px){
+
+}

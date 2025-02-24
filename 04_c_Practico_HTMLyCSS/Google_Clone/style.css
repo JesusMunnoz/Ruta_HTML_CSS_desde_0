@@ -151,7 +151,41 @@ footer ul li a{
     color: #5f6368;
 }
 
-@media  (min-width:600px){
+@media (max-width:900px){
+    
+    /*.main-input{
 
+    }*/
+    .main-input .main-input-container{
+        width: 561px;
+        border-top-left-radius: 24px;
+        border-top-right-radius: 24px;
+        border-bottom-left-radius: 24px;
+        border-bottom-right-radius: 24px;
+    }
+
+}
+
+@media (max-width:670px){
+    
+    .main-input .main-input-container{
+        width: 449px;
+        border-top-left-radius: 24px;
+        border-top-right-radius: 24px;
+        border-bottom-left-radius: 24px;
+        border-bottom-right-radius: 24px;
+    }
+
+}
+
+@media (max-width:560px){
+    
+    .main-input .main-input-container{
+        width: 337px;
+        border-top-left-radius: 24px;
+        border-top-right-radius: 24px;
+        border-bottom-left-radius: 24px;
+        border-bottom-right-radius: 24px;
+    }
 
 }

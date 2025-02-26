@@ -102,7 +102,7 @@ header img{
     height: 16px;
     margin-left: 5px;
     background-image: url("./assets/icons/arrow_down.svg");
-    background-size: contain; /* Ajusta la imagen para que quepa dentro */
+    background-size: cover; /*o contain*/ /* Ajusta la imagen para que quepa dentro */
     background-position: center; /* Centra la imagen */
     background-repeat: no-repeat;
 }
@@ -126,4 +126,45 @@ main{
     min-width: 288px;
     max-width: 900px;
     margin: 0 auto;
+}
+
+.main-exchange-container .backgroundImg{
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    background-image: url("./assets/icons/Bitcoin.svg");
+    background-size: cover; /*contain*/
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.main-exchange-container h2{
+    margin-bottom: 30px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--black);
+}
+
+.main-exchange-container p{
+    margin-bottom: 30px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.6rem;
+    color: #757575;
+}
+
+.main-currency-table{
+    width: 70%;
+    min-width: 235px;
+    max-width: 500px;
+    height: 360px;
+    margin: 0 auto;
+    font-family: "Inter", sans-serif;
+}
+.main-currency-table .currency-table--title{
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 2.3rem;
 }

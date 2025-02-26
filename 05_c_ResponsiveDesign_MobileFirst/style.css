@@ -7,6 +7,7 @@ Otros
 */
 :root{
     /*Color*/
+    --linear-background:linear-gradient(207.8deg, #201E1C 16.69%, #F7931A 100%);
     --bitcoin-orange: #f7931a; 
     --soft-orange: #ffe9d5;
     --secondary-blue: #1a9af7;
@@ -38,6 +39,8 @@ header{
     min-width: 320px;
     height: 334px;
     text-align: center;
+    background: var(--linear-background);
+    background: 207.8deg, #201E1C 16.69%, #F7931A 100%;
 }
 
 header img{
@@ -55,4 +58,72 @@ header img{
     margin-top: 50px;
     text-align: center;
     align-self: center;
+}
+
+.header--title-container h1 {
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--just-white)
+}
+.header--title-container p{
+    margin-top: 25px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: var(--soft-orange);
+}
+
+.header--title-container .header--button{
+    position: absolute;
+    left: calc(50% - 118px); /* 50% = queremos que esté en el centro. -118px lo mueve a la izquierda.*/
+    /*Recordar el punto 0 es esquina superior izquierda*/
+    top: 270px;
+    display: block;
+    margin-top: 35px;
+    padding: 15px;
+    width: 229px;
+    height: 48px;
+    background-color: var(--off-white);
+
+    /*Shadow*/
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+    border: none;
+    border-radius: 5px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--black);
+}
+
+.header--button span{
+    display: inline-block;
+    width: 22px;
+    height: 16px;
+    margin-left: 5px;
+    background-image: url("./assets/icons/arrow_down.svg");
+    background-size: contain; /* Ajusta la imagen para que quepa dentro */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat;
+}
+
+main{
+    width: 100%;
+    height: auto;
+    background-color: var(--off-white);
+}
+
+.main-exchange-container{
+    width: 100%;
+    height: auto;
+    padding-top: 80px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.main-exchange-container--title{
+    width: 90%;
+    min-width: 288px;
+    max-width: 900px;
+    margin: 0 auto;
 }

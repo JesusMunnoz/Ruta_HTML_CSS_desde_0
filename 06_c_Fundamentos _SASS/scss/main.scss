@@ -2,7 +2,7 @@ $primary-color: #FFEFE7;
 $secondary-color: #FFDAC6;
 $tertiry-color: #BABD8D;
 $primary-text-color: #7C6A0A;
-$quaternanion-color: #FA9500;
+$quaternary-color: #FA9500;
 
 $font-stack: "IBM Plex Sans", sans-serif;
 $paragraph-size: 1.5rem;
@@ -73,7 +73,7 @@ article{
         width: 20vh;
         padding: 20px;
         border-style: none;
-        background-color: $quaternanion-color;
+        background-color: $quaternary-color;
         border-radius: 35px;
         color: white;
         font-size: 1rem;
@@ -110,41 +110,51 @@ section{
             align-items: center;
             column-gap: 200px;
             row-gap: 80px;
-            padding: 100px;
+            padding: 100px;/**/
+        }
 
-            .product-card {
-                width: 14vw;
-                height: 480px;
-                /*height: 45vh;*/
-                background-color: $secondary-color;
-                color: $primary-text-color;
-                padding: 20px;
-                border-radius: 8px;
+        .product-card {
+            width: 14vw;
+            height: 480px;/**/
+            /*height: 45vh;*/
+            background-color: $secondary-color;
+            color: $primary-text-color;
+            padding: 20px;
+            border-radius: 8px;
 
-                .icon{
-                    width: 100%;
-                    display: flex;
-                    justify-content: flex-end;
-                    padding-bottom: 12px;
-                }
+            .icon{
+                width: 100%;
+                display: flex;
+                justify-content: flex-end;
+                padding-bottom: 12px;
+            }
 
-                .product-image{
-                    width: 100%;
-                    height: auto;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    margin-bottom: 10px;/**/
+            .product-image{
+                width: 100%;
+                height: auto;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 10px;/**/
+
+                img{
+                    width: 12vw;
+                    height: 30vh;
+                    object-fit: cover;
+                    border-radius: 6px;
     
-                    img{
-                        width: 12vw;
-                        height: 30vh;
-                        object-fit: cover;
-                        border-radius: 6px;
-        
-                    }
                 }
             }
+        }
+
+    }
+
+    .furniture{
+        @extend .healthcare;
+        .product-card{
+            background-color: $tertiry-color;
+            color: #ffffff;
+
         }
     }
 }
@@ -152,7 +162,7 @@ section{
 
 
 footer {
-    background-color: $quaternanion-color;
+    background-color: $quaternary-color;
     width: 100%;
     height: 250px;
 }

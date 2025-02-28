@@ -10,10 +10,14 @@ $paragraph-size: 1.5rem;
 
 
 /*---*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 body{
     margin: 0;
     padding: 0;
-    /*box-sizing: border-box;*/
     background-color: $primary-color;
     font-family: $font-stack;
 }
@@ -91,30 +95,58 @@ section{
         font-size: 2rem;
     }
     .healthcare{
+        padding-bottom: 60px;
         h2{
             font-weight: 300;
             padding-bottom: 20px;
         }
 
-        .product-card{
-            width: 12vw;
+        .card-section {
+            display: flex;
+            width: auto;
             height: auto;
-            background-color: $secondary-color;
-            color: $primary-text-color;
-            padding: 20px;
-            border-radius: 10px;
+            justify-content: center;
+            flex-wrap: wrap;
+            align-items: center;
+            column-gap: 200px;
+            row-gap: 80px;
+            padding: 100px;
 
-            img{
-                width: 200px;
-                height: 250px;
-                background-image: cover;
-                border-radius: 6px;
+            .product-card {
+                width: 14vw;
+                height: 480px;
+                /*height: 45vh;*/
+                background-color: $secondary-color;
+                color: $primary-text-color;
+                padding: 20px;
+                border-radius: 8px;
 
+                .icon{
+                    width: 100%;
+                    display: flex;
+                    justify-content: flex-end;
+                    padding-bottom: 12px;
+                }
+
+                .product-image{
+                    width: 100%;
+                    height: auto;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-bottom: 10px;/**/
+    
+                    img{
+                        width: 12vw;
+                        height: 30vh;
+                        object-fit: cover;
+                        border-radius: 6px;
+        
+                    }
+                }
             }
         }
     }
-
-    
 }
 
 

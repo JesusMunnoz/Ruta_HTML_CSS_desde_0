@@ -33,7 +33,7 @@ article {
   padding-left: 45px;
   padding-right: 45px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 article .impact-section {
   display: flex;

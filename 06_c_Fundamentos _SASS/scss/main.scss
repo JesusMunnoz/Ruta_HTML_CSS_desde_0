@@ -37,6 +37,21 @@ nav {
     }
 }
 
+article{
+    width: auto;
+    padding-left: 60px;
+    padding-right: 20px;
+    color: $primary-text-color;
+    padding-left: 45px;
+    padding-right: 45px;
+    
+
+    .impact-section{
+        width: 50%;
+        background-color: whitesmoke;
+    }
+}
+
 
 
 footer {

@@ -86,6 +86,10 @@ article{
         border-radius: 35px;
         color: white;
         font-size: 1rem;
+
+        &:hover{
+            transform: scale(1.1);
+        }
     }
 
     img{
@@ -195,7 +199,21 @@ section{
     }
     
 }
-
+.gallery{
+    .gallery-images{
+        @include flex-center(row, space-between, center);
+       img{
+        width: 28vw;
+        height: 45vh;
+        object-fit: cover;
+        border-radius: 16px;
+        object-position: 5px 35%;
+        &:hover{
+            transform: scale(1.1);
+        }
+       }
+    }
+}
 
 
 footer {

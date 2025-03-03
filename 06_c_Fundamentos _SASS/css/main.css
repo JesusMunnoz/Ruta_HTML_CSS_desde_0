@@ -75,6 +75,7 @@ article button {
   border-radius: 35px;
   color: white;
   font-size: 1rem;
+  transition-duration: 0.3s;
 }
 article button:hover {
   transform: scale(1.1);
@@ -175,6 +176,13 @@ section .furniture .product-card {
   text-align: center;
   font-size: 1.5rem;
 }
+.gallery {
+  padding-bottom: 60px;
+}
+.gallery h2 {
+  font-weight: bold;
+  padding-bottom: 60px;
+}
 .gallery .gallery-images {
   display: flex;
   flex-direction: row;
@@ -192,6 +200,7 @@ section .furniture .product-card {
 }
 .gallery .gallery-images img:hover {
   transform: scale(1.1);
+  transition-duration: 0.3s;
 }
 
 footer {

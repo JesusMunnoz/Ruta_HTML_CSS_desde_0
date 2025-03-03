@@ -7,15 +7,15 @@ $quaternary-color: #FA9500;
 $font-stack: "IBM Plex Sans", sans-serif;
 $paragraph-size: 1.5rem;
 
-@mixin flexCenter($direction, $content, $align){
-    display: flex;
-    flex-direction: $flexCenter;
-    justify-content: $content;
-    align-items: $align;
+@mixin flex-center($direction: row, $justify: center, $align: center) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
 }
 
 @mixin buttonStyle{
-    bottom{
+    button{
         background: none;
         border-style: none;
     }
@@ -38,8 +38,7 @@ body{
 
 nav {
     width: auto;
-    display: flex;
-    justify-content: space-between;
+    @include flex-center(row, space-between, center);
     color: $primary-text-color;
     padding: 15px;
 
@@ -50,11 +49,7 @@ nav {
     .icons{
         display: flex;
         gap: 15px;
-        
-        button{
-            background: none;
-            border-style: none;
-        }
+        @include buttonStyle;
     }
 }
 
@@ -64,12 +59,12 @@ article{
     padding-left: 45px;
     padding-right: 45px;
     padding-top: 70px;
-    display: flex;
-    justify-content: space-between;
+    @include flex-center(row, space-between, center);
 
     .impact-section{
-        display: flex;
-        flex-direction: column;
+        /*display: flex;
+        flex-direction: column;*/
+        @include flex-center(column, space-evenly, flex-start);
         padding-top: 50px;
         gap: 25px;
     }
@@ -81,12 +76,12 @@ article{
     }
     p{
         font-size: $paragraph-size;
-        padding-left: 30px;
+        /*padding-left: 30px;*/
     }
+    @include buttonStyle;
     button{
         width: 20vh;
         padding: 20px;
-        border-style: none;
         background-color: $quaternary-color;
         border-radius: 35px;
         color: white;
@@ -116,12 +111,10 @@ section{
         }
 
         .card-section {
-            display: flex;
+            @include flex-center(row, space-evenly, center);
             width: auto;
             height: auto;
-            justify-content: center;
             flex-wrap: wrap;
-            align-items: center;
             column-gap: 200px;
             row-gap: 80px;
             padding: 100px;/**/

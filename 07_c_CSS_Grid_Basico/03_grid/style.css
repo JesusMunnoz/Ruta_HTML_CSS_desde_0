@@ -30,8 +30,7 @@ body{
     display: grid;
     font-size: 4rem;
     justify-items: end;
-    align-items: end;
-    background-color: #acd900;  
+    align-items: end; 
 }
 
 .item:nth-child(1), .item:nth-child(4) {

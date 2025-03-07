@@ -12,9 +12,17 @@ html{
     border: 5px solid #e1bee7;
     background-color: #fff1ff;
     display: grid;
+    grid-gap: 15px;
     grid-template-columns: 150px 150px 150px; /*ancho*/
     grid-auto-rows: 150px; 
-    gap: 600px;
+    height: 600px;
+    /*justify-content: center;
+    align-content: center;*/
+    place-content: center; /*suma de 
+    justify-content: center;
+    align-content: center;*/
+    justify-items: end;
+    align-items: end;
 
 }
 .item{

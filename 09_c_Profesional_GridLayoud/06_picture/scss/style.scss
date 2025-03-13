@@ -1,0 +1,101 @@
+:root {
+  --skin: #f6c09c;
+  --background: #ed4042;
+  --red: #ed2860;
+  --dark-red: #680524;
+  --black: #00243a;
+  --white: #fff;
+
+
+    --sk-light: rgb(246, 192, 156);
+    --sk-dark: rgb(244, 180, 150);
+    --sk-bright: rgb(248, 208, 181);
+
+    --ear-light: rgb(237, 146, 125);
+    --ear-dark: rgb(235, 133, 121);
+    --ear-hole: rgb(232, 87, 86);
+
+    --hair-light: rgb(228, 67, 36);
+    --hair-Bright: rgb(241, 103, 57);
+    --hair-dark: rgb(210, 33, 39);
+
+    --moth: rgb(131, 3, 52);
+    --mouth-back: rgb(77, 0, 19);
+    --teeth: rgb(255, 255, 255);
+    --teethShadow: rgb(204, 221, 231);
+    --tongue: rgb(237, 39, 96);
+    --tongueBright: rgb(240, 99, 131);
+}
+
+body{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.image{
+  height: 100vh;
+  width: 50vw;
+  border: 1px solid black;
+  justify-items: center;
+  align-items: center;
+}
+.image figure img{
+  object-fit: cover;
+}
+
+
+.container{
+  height: 100vh;
+  width: 50vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--background);
+}
+
+.head{
+  width: 100px;
+  height: 200px;
+  background-color: var(--skin);
+  border-radius: 50px;
+  position: relative;
+}
+
+.eye-left{
+  width: 20px;
+  height: 20px;
+  background-color: var(--white);
+  position: absolute;
+  top: 70px;
+  left: 25px;
+  border-radius: 50%;
+}
+.eye-right{
+  width: 20px;
+  height: 20px;
+  background-color: var(--white);
+  position: absolute;
+  top: 70px;
+  left: 55px;
+  border-radius: 50%;
+}
+
+.nose{
+  width: 20px;
+  height: 35px;
+  background-color: var(--red);
+  position: absolute;
+  left: 40px;
+  top: 95px;
+  border-radius: 20px 20px 0 0;
+}
+.noseH{
+
+}

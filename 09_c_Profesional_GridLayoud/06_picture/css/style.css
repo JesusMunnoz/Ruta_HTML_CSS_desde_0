@@ -279,4 +279,81 @@ main {
   border-radius: 5px;
   margin-top: 5px;
   margin-left: 20px;
+}
+
+.lentes {
+  position: absolute;
+  margin-left: 2px;
+  margin-top: 2px;
+  width: 225px;
+  height: 92px;
+  top: 65px;
+  left: -15px;
+  display: flex;
+  flex-direction: row;
+}
+
+.patillaI {
+  width: 20px;
+  height: 10px;
+  background-color: black;
+  margin-top: 42px;
+  border-radius: 5px;
+}
+
+.lenteI {
+  width: 77px;
+  height: 77px;
+  border: solid 7px currentColor;
+  border-radius: 50%;
+}
+
+.lenteI:before {
+  content: "";
+  position: absolute;
+  top: 31px;
+  left: 25px;
+  width: 80px;
+  height: 30px;
+  background-color: currentColor;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.4588235294);
+}
+
+.nasal {
+  width: 5px;
+  height: 10px;
+  background-color: black;
+  margin-top: 42px;
+}
+
+.lenteD {
+  width: 77px;
+  height: 77px;
+  border: solid 7px currentColor;
+  border-radius: 50%;
+}
+
+.lenteD:before {
+  content: "";
+  position: absolute;
+  top: 31px;
+  left: 120px;
+  width: 80px;
+  height: 30px;
+  background-color: currentColor;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.4588235294);
+}
+
+.patillad {
+  width: 20px;
+  height: 10px;
+  background-color: black;
+  margin-top: 42px;
+  border-radius: 2px;
 }/*# sourceMappingURL=style.css.map */

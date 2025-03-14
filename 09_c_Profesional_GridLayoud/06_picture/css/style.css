@@ -8,6 +8,7 @@
   --sk-light: rgb(246, 192, 156);
   --sk-dark: rgb(244, 180, 150);
   --sk-bright: rgb(248, 208, 181);
+  --pecas: rgb(246, 151, 120);
   --ear-light: rgb(237, 146, 125);
   --ear-dark: rgb(235, 133, 121);
   --ear-hole: rgb(232, 87, 86);
@@ -356,4 +357,105 @@ main {
   background-color: black;
   margin-top: 42px;
   border-radius: 2px;
+}
+
+.pecasL {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 160px;
+  left: 5px;
+}
+
+.pecasL .p1 {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: var(--pecas);
+  margin-left: 12px;
+  margin-top: 5px;
+}
+
+.pecasL .p2 {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--pecas);
+  margin-left: 25px;
+  margin-top: 5px;
+}
+
+.pecasL .p3 {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: var(--pecas);
+  margin-left: 12px;
+  margin-top: 5px;
+}
+
+.pecasL .p4 {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: var(--pecas);
+}
+
+.pecasL .p5 {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: var(--pecas);
+  margin-left: 20px;
+}
+
+.pecasD {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 160px;
+  left: 150px;
+  transform: rotateX(180deg);
+}
+
+.pecasD .p1 {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: var(--pecas);
+  margin-left: 12px;
+  margin-top: 5px;
+}
+
+.pecasD .p2 {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--pecas);
+  margin-left: 25px;
+  margin-top: 5px;
+}
+
+.pecasD .p3 {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: var(--pecas);
+  margin-left: 12px;
+  margin-top: 5px;
+}
+
+.pecasD .p4 {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: var(--pecas);
+}
+
+.pecasD .p5 {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: var(--pecas);
+  margin-left: 20px;
 }/*# sourceMappingURL=style.css.map */

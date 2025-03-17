@@ -20,7 +20,6 @@ body {
 .container {
     width: 31.25em;
     height: 31.25em;
-    border: 1px solid black;
     position: absolute;
     transform: translate(-50%, -50%);
     left: 50%;
@@ -53,6 +52,7 @@ body {
     width: 2.5em;
     height: 3.43em;
     position: absolute;
+    border-radius: 0 0 0 0.93em;
 }
 .leg-1 {
     left: 14.18em;
@@ -77,7 +77,8 @@ body {
     content: "";
     background-color: #ee9728;
 }
-.leg-1:before, .leg-3:before {
+.leg-1:before, 
+.leg-3:before {
     height: 0.37em;
     width: 1.5em;
     right: 0;
@@ -176,7 +177,7 @@ body {
     position: absolute;
     content: "";
     width: 6.25em;
-    height: 3.12;
+    height: 3.12em;
     background-color: #cd2126;
     border-radius: 0 0 3.12em 3.12em;
     right: 0;
@@ -185,26 +186,29 @@ body {
     position: absolute;
     content: "";
     height: 0.93em;
+    width: 1.87em;
     background-color: #000000;
     border-radius: 0 0 0.93em 0.93em;
     left: -0.43em;
 }
 
-.ear, .ear:after{
+.ear, 
+.ear:after{
+    position: absolute;
     width: 1.56em;
     height: 2.5em;
-    position: absolute;
     border-radius: 1.56em 0 0 0;
 }
 .ear{
+    position: absolute;
     background-color: #ee9728;
-    bottom: 4.37em;
-    right: 1.25em;
+    bottom: 12.2em;
+    right: 11.2em;
 }
 .ear:after{
     content: "";
     background-color: #cd2126;
-    right: -1.25em;
+    right: -1.2em;
 }
 .ear:before{
     position: absolute;
@@ -214,5 +218,11 @@ body {
     background-color: #000000;
     border-radius: 50%;
     top: 3.12em;
-    
+    left: -1.25em;
+}
+
+@media screen and (min-width: 800px){
+    .container{
+        font-size: 1.2em;
+    }
 }

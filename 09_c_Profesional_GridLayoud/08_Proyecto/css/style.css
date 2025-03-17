@@ -1,0 +1,35 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "DM Sans", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #FFEFE7;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+nav {
+  font-size: 3rem;
+  display: grid;
+  grid-column: 2fr;
+  display: flex;
+  flex-direction: row;
+  margin: 20px 20px;
+}
+nav p {
+  font-size: 3rem;
+}
+
+.main {
+  width: 400px;
+  height: 400px;
+  background-color: papayawhip;
+}/*# sourceMappingURL=style.css.map */

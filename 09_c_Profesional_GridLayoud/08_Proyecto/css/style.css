@@ -22,10 +22,55 @@ nav {
   grid-column: 2fr;
   display: flex;
   flex-direction: row;
-  margin: 20px 20px;
+  padding: 20px 20px;
+  background-color: #ffe97c;
 }
 nav p {
   font-size: 3rem;
+  color: #FA9500;
+}
+nav .container {
+  width: 31.25em;
+  height: 31.25em;
+  border: 1px solid black;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+}
+nav .container .dog {
+  width: 16.25em;
+  height: 6.25em;
+  background-color: #ee9728;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: calc(50% + 3.12em);
+  border-radius: 0 3.75em 0 6.25em;
+}
+nav .container .dog-bottom {
+  position: absolute;
+  width: 16.25em;
+  height: 7.25em;
+  background-color: #e97833;
+  transform: translate(-50%, -50%);
+  top: calc(50% + 1.25em);
+  left: calc(50% + 3.12em);
+  border-radius: 0 3.75em 0 6.25em;
+}
+nav .container .leg-1, nav .container .leg-3 {
+  width: 2.5em;
+  height: 3.43em;
+  position: absolute;
+}
+nav .container .leg-1 {
+  left: 14.18em;
+  top: 18.12;
+  background-color: #e55627;
+}
+nav .container .leg-3 {
+  left: 5.65em;
+  top: 5em;
 }
 
 .main {

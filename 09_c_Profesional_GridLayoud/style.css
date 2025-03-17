@@ -65,7 +65,6 @@ body {
     left: 5em;
     background-color: #ee9728;
 }
-
 .leg-1:before, 
 .leg-1:after{
     position: absolute;
@@ -78,7 +77,6 @@ body {
     content: "";
     background-color: #ee9728;
 }
-
 .leg-1:before, .leg-3:before {
     height: 0.37em;
     width: 1.5em;
@@ -93,7 +91,6 @@ body {
     bottom: -1.5em;
     border-radius: 1.25em 0 0 0 ;
 }
-
 .leg-2, .leg-4{
     width: 3.75em;
     height: 3.43em;
@@ -164,4 +161,58 @@ body {
     border: 0.37em solid #2e5296;
     left: -0.62em;
     top: 0.62em;
+}
+
+.face{
+    background-color: #ee9728;
+    width: 10em;
+    height: 4.37em;
+    position: absolute;
+    left: -3.75em;
+    bottom: 7.81em;
+    border-radius: 0 0 0 4.37em;
+}
+.face:before{
+    position: absolute;
+    content: "";
+    width: 6.25em;
+    height: 3.12;
+    background-color: #cd2126;
+    border-radius: 0 0 3.12em 3.12em;
+    right: 0;
+}
+.face:after{
+    position: absolute;
+    content: "";
+    height: 0.93em;
+    background-color: #000000;
+    border-radius: 0 0 0.93em 0.93em;
+    left: -0.43em;
+}
+
+.ear, .ear:after{
+    width: 1.56em;
+    height: 2.5em;
+    position: absolute;
+    border-radius: 1.56em 0 0 0;
+}
+.ear{
+    background-color: #ee9728;
+    bottom: 4.37em;
+    right: 1.25em;
+}
+.ear:after{
+    content: "";
+    background-color: #cd2126;
+    right: -1.25em;
+}
+.ear:before{
+    position: absolute;
+    content: "";
+    height: 0.62em;
+    width: 0.62em;
+    background-color: #000000;
+    border-radius: 50%;
+    top: 3.12em;
+    
 }

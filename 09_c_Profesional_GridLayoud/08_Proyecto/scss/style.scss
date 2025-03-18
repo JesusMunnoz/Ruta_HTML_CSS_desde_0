@@ -4,15 +4,40 @@ $tertiry-color: #BABD8D;
 $primary-text-color: #7C6A0A;
 $quaternary-color: #FA9500;
 
-$dog-primary-color: #ee9728;
-$dog-secundary-color: #e97833;
-$dog-tertiry-color: #e55627;
+$background: #ffe97c;
+$color-body-legs: #ee9728;
+$color-body-neck-frotLegs-face-ear: #e97833;
+$color-foodBack-text: #e55627;
+$color-tail: #e77d21;
+$color-spotFace-ear-textShadow: #cd2126;
+$color-colarBackground: #5184bf;
+$color-colarBorder: #2e5296;
+$color-grass: #55bf51;
+$black: #000000;
 
 $font-title: "Lilita One", sans-serif;
 $font-stack: "IBM Plex Sans", sans-serif;
 $font-second: "Roboto Slab", serif;
 $font-third: "Roboto Mono", monospace;
 $paragraph-size: 1.5rem;
+
+/*---------------------------------------------*/
+
+@mixin flex-center($direction: row, $justify: center, $align: center) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+  
+@mixin buttonStyle{
+    button{
+        background: none;
+        border-style: none;
+    }
+}
+
+/*---------------------------------------------*/
 
 *{
     box-sizing: border-box;
@@ -28,7 +53,8 @@ body {
     margin: 0;
     padding: 0;
     font-family: "IBM Plex Sans", sans-serif;
-    background-color: #ffe97c;
+    background-color: $background;
+
 }
 
 .nav-bar{
@@ -38,16 +64,16 @@ body {
     grid-template-columns: 1fr 1fr;  /* Divide el nav en dos columnas iguales */
     grid-template-rows: 1fr;
     padding: 20px 20px;
-    background-color: #ffe97c;
+    background-color: $background;
     /*border: #e55627 1px solid;*/
     align-items: center;
     
-    p{
+    h1{
         font-size: 5rem;
-        color:  #e55627;
+        color:  $color-foodBack-text;
         justify-self: start;
         font-family: $font-title;
-        text-shadow: 2px 2px 0px #cd2126;
+        text-shadow: 2px 2px 0px $color-spotFace-ear-textShadow;
     }
         
     .container {
@@ -62,7 +88,7 @@ body {
     .dog {
         width: 162.5px;
         height: 62.5px;
-        background-color: #ee9728;
+        background-color: $color-body-legs;
         position: absolute;
         transform: translate(-50%, -50%);
         top: 50%;
@@ -73,7 +99,7 @@ body {
         position: absolute;
         width: 162.5px;
         height: 72.5px;
-        background-color: #e97833;
+        background-color: color-body-neck-frotLegs-face-ear;
         transform: translate(-50%, -50%);
         top: calc(50% + 12.5px);
         left: calc(50% - 5px);
@@ -90,11 +116,11 @@ body {
         /*Pierna delantera atrás*/
         top: 123.5px;
         left: 50px;
-        background-color: #e55627;
+        background-color: $color-foodBack-text;
     }
         
     .leg-3 {
-        background-color: #ee9728;
+        background-color: $color-body-legs;
         top: 56.2px;
         left: 50px;
     }
@@ -102,12 +128,12 @@ body {
         /*pie delantera atras*/
         position: absolute;
         content: "";
-        background-color: #e55627;
+        background-color: $color-foodBack-text;
     }
     .leg-3:before, .leg-3:after{
         position: absolute;
         content: "";
-        background-color: #ee9728;
+        background-color: $color-body-legs;
     }
     .leg-1:before, .leg-3:before {
         height: 3.7px;
@@ -130,23 +156,23 @@ body {
     }
     .leg-2{
         /*pierna trasera atras*/
-        background-color: #e55627;
+        background-color: $color-foodBack-text;
         left: 125px;
         top: 123.5px;
     }
     .leg-4{
-        background-color: #ee9728;
+        background-color: $color-body-legs;
         left: 125px;
         top: 56.2px;
     }
     .leg-4:before, .leg-4:after{
-        background-color: #ee9728;
+        background-color: $color-body-legs;
         position: absolute;
         content: "";
     }
     .leg-2:before, .leg-2:after{
         /*pie delantera atras*/
-        background-color: #e55627;
+        background-color: $color-foodBack-text;
         position: absolute;
         content: "";
     }
@@ -167,7 +193,7 @@ body {
     .tail {
         width: 12.5px;
         height: 75px;
-        background-color: #e77d21;
+        background-color: $color-tail;
         position: absolute;
         left: 163px;
         top: 30px;
@@ -176,7 +202,7 @@ body {
     .neck {
         width: 62.5px;
         height: 19px;
-        background-color: #ee9728;
+        background-color: $color-body-legs;
         position: absolute;
         top: -18.7px;
     }  
@@ -185,13 +211,13 @@ body {
         content: "";
         width: 68.7px;
         height: 6.2px;
-        background-color: #5184bf;
-        border: 3.7px solid #2e5296;
+        background-color: $color-colarBackground;
+        border: 3.7px solid $color-colarBorder;
         left: -6.2px;
         top: 6.2px;
     }  
     .face {
-        background-color: #ee9728;
+        background-color: $color-body-legs;
         width: 100px;
         height: 43.7px;
         position: absolute;
@@ -204,7 +230,7 @@ body {
         content: "";
         width: 62.5px;
         height: 31.2px;
-        background-color: #cd2126;
+        background-color: $color-spotFace-ear-textShadow;
         border-radius: 0 0 31.2px 31.2px;
         right: 0;
     } 
@@ -214,7 +240,7 @@ body {
         content: "";
         height: 9.3px;
         width: 18.7px;
-        background-color: #000000;
+        background-color: $black;
         border-radius: 0 0 9.3px 9.3px;
         left: -4.3px;
     } 
@@ -225,13 +251,13 @@ body {
         border-radius: 15.6px 0 0 0;
     } 
     .ear {
-        background-color: #ee9728;
+        background-color: $color-body-legs;
         bottom: 122px;
         right: 112px;
     } 
     .ear:after {
         content: "";
-        background-color: #cd2126;
+        background-color: $color-spotFace-ear-textShadow;
         right: -12px;
     } 
     .ear:before {
@@ -240,7 +266,7 @@ body {
         content: "";
         height: 6.2px;
         width: 6.2px;
-        background-color: #000000;
+        background-color: $black;
         border-radius: 50%;
         top: 31.2px;
         left: -12.5px;
@@ -248,16 +274,67 @@ body {
     .grass{
         width: 200px;
         height: 30px;
-        background-color: #55bf51;
+        background-color: $color-grass;
         position: absolute;
         border-radius: 50px 50px 0 0;
         bottom: 0;
     }
 }
 
-main{
+.main-section{
     justify-self: center;
     width: 95vw;
-    height: 400px;
-    border-top: #cd2126 2px solid;
+    border-top: $color-spotFace-ear-textShadow 2px solid;
+    display: flex;
+    flex-direction: column;
+}
+
+.first-article{
+    border: 1px solid red;
+    height: 700px;
+    color: $primary-text-color;
+    padding-left: 45px;
+    padding-right: 45px;
+    padding-top: 100px;
+    @include flex-center(row, space-evenly, center);
+
+    .impact-section{
+        /*display: flex;
+        flex-direction: column;*/
+        border: 1px solid black;
+        height: 400px;
+        @include flex-center(column, space-evenly, flex-start);
+        padding-top: 50px;
+        gap: 25px;
+
+    }
+
+    h2{
+        font-size: 3.5rem;
+        padding: 0;
+        margin: 0;
+    }
+    p{
+        text-align: center;
+        font-size: 3rem;
+    }
+    @include buttonStyle;
+    button{
+        width: 20vh;
+        padding: 20px;
+        background-color: $quaternary-color;
+        border-radius: 35px;
+        color: white;
+        font-size: 1rem;
+        transition-duration: 0.3s;
+
+        &:hover{
+            transform: scale(1.1);
+        }
+    }
+
+    img{
+        width: 40vw;
+        border-radius: 20px;
+    }
 }

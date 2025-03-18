@@ -8,7 +8,10 @@ $dog-primary-color: #ee9728;
 $dog-secundary-color: #e97833;
 $dog-tertiry-color: #e55627;
 
+$font-title: "Lilita One", sans-serif;
 $font-stack: "IBM Plex Sans", sans-serif;
+$font-second: "Roboto Slab", serif;
+$font-third: "Roboto Mono", monospace;
 $paragraph-size: 1.5rem;
 
 *{
@@ -40,9 +43,11 @@ nav{
     align-items: center;
     
     p{
-        font-size: 4rem;
+        font-size: 5rem;
         color:  #e55627;
         justify-self: start;
+        font-family: $font-title;
+        text-shadow: 2px 2px 0px #cd2126;
     }
         
     .container {

@@ -29,9 +29,11 @@ nav {
   align-items: center;
 }
 nav p {
-  font-size: 4rem;
+  font-size: 5rem;
   color: #e55627;
   justify-self: start;
+  font-family: "Lilita One", sans-serif;
+  text-shadow: 2px 2px 0px #cd2126;
 }
 nav .container {
   width: 200px;

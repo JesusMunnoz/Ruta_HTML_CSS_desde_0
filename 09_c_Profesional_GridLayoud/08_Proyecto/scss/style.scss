@@ -290,18 +290,20 @@ body {
 }
 
 .first-article{
-    border: 1px solid red;
-    height: 700px;
+    //border: 1px solid red;
+    height: 750px;
     color: $primary-text-color;
     padding-left: 45px;
     padding-right: 45px;
     padding-top: 100px;
+    padding-bottom: 100px;
     @include flex-center(row, space-evenly, center);
+    border-bottom: $color-spotFace-ear-textShadow 2px solid;
 
     .impact-section{
         /*display: flex;
         flex-direction: column;*/
-        border: 1px solid black;
+        //border: 1px solid black;
         height: 400px;
         @include flex-center(column, space-evenly, flex-start);
         padding-top: 50px;
@@ -334,7 +336,88 @@ body {
     }
 
     img{
-        width: 40vw;
+        height: 580px;
         border-radius: 20px;
     }
+}
+
+
+section{
+    width: 100%;
+    height: auto;
+    margin-top: 40px;
+    
+    h2{
+        color: $primary-text-color;
+        font-size: 2rem;
+
+        /*font-size: 5rem;
+        color:  $color-foodBack-text;
+        font-family: $font-title;
+        text-shadow: 2px 2px 0px $color-spotFace-ear-textShadow;*/
+    }
+    .section-team{
+        padding-bottom: 60px;
+        .title{
+            font-size: 5rem;
+            color:  $color-foodBack-text;
+            font-family: $font-title;
+            text-shadow: 2px 2px 0px $color-spotFace-ear-textShadow;
+        }
+
+        .card-section {
+            @include flex-center(row, space-evenly, center);
+            width: 95vw;
+            height: auto;
+            flex-wrap: wrap;
+            column-gap: 200px;
+            row-gap: 80px;
+            padding: 100px;/**/
+        }
+
+        .product-card {
+            width: 300px;
+            height: 480px;
+            /*height: 45vh;*/
+            background-color: $secondary-color;
+            color: $primary-text-color;
+            padding: 20px;
+            border-radius: 8px;
+
+            .product-image{
+                width: 100%;
+                height: auto;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 10px;/**/
+
+                img{
+                    width: 250px;
+                    height: 200px;
+                    object-fit: cover;
+                    border-radius: 6px;
+                }
+            }
+            h3{
+                margin-top: 30px;
+            }
+            h2{
+                margin-top: 20px;
+            }
+            hr{
+                height: 10px;
+                background-color: #cd2126;
+                box-shadow: 2px 2px 0 $color-foodBack-text;
+                border: none;
+            }
+            p{
+                margin-top: 10px;
+                font-size: 1.5rem;
+            }
+        }
+
+    }
+
+    
 }

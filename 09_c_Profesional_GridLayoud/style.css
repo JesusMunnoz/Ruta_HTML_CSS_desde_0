@@ -17,26 +17,30 @@ body {
 }
   
 nav{
-    height: 100px;
+    height: 150px;
     font-size: 3rem;
     display: grid;
-    grid-column: 2fr;
-    display: flex;
-    flex-direction: row;
+    grid-template-columns: 1fr 1fr;  /* Divide el nav en dos columnas iguales */
+    grid-template-rows: 1fr;
     padding: 20px 20px;
     background-color: #ffe97c;
-    border: #e55627 1px solid;
+    /*border: #e55627 1px solid;*/
+    align-items: center;
 }
 nav p{
     font-size: 4rem;
     color:  #e55627;
+    justify-self: start;
 }
     
 nav .container {
+    /*border: #000000 1px solid;*/
     width: 200px;
     height: 200px;
     position: absolute;
-    right: 50px;
+    
+    scale:0.5;
+    justify-self: end;
 }
 
 nav .container .dog {

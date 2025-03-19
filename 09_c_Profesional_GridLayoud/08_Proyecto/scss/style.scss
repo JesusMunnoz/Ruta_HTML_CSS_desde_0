@@ -52,9 +52,8 @@ html{
 body {
     margin: 0;
     padding: 0;
-    font-family: "IBM Plex Sans", sans-serif;
+    /*font-family: "IBM Plex Sans", sans-serif;*/
     background-color: $background;
-
 }
 
 .nav-bar{
@@ -83,202 +82,203 @@ body {
         
         scale:0.5;
         justify-self: end;
-    }
-    
-    .dog {
-        width: 162.5px;
-        height: 62.5px;
-        background-color: $color-body-legs;
-        position: absolute;
-        transform: translate(-50%, -50%);
-        top: 50%;
-        left: calc(50% - 5px);
-        border-radius: 0 37.5px 0 62.5px;
-    }
-    .dog-bottom {
-        position: absolute;
-        width: 162.5px;
-        height: 72.5px;
-        background-color: color-body-neck-frotLegs-face-ear;
-        transform: translate(-50%, -50%);
-        top: calc(50% + 12.5px);
-        left: calc(50% - 5px);
-        border-radius: 0 37.5px 0 62.5px;
-    }
-    
-    .leg-1, .leg-3 {
-        width: 25px;
-        height: 34.3px;
-        position: absolute;
-        border-radius: 0 0 0 9.3px;
-    }
-    .leg-1 {
-        /*Pierna delantera atrás*/
-        top: 123.5px;
-        left: 50px;
-        background-color: $color-foodBack-text;
-    }
+
+        .dog {
+            width: 162.5px;
+            height: 62.5px;
+            background-color: $color-body-legs;
+            position: absolute;
+            transform: translate(-50%, -50%);
+            top: 50%;
+            left: calc(50% - 5px);
+            border-radius: 0 37.5px 0 62.5px;
+        }
+        .dog-bottom {
+            position: absolute;
+            width: 162.5px;
+            height: 72.5px;
+            background-color: color-body-neck-frotLegs-face-ear;
+            transform: translate(-50%, -50%);
+            top: calc(50% + 12.5px);
+            left: calc(50% - 5px);
+            border-radius: 0 37.5px 0 62.5px;
+        }
         
-    .leg-3 {
-        background-color: $color-body-legs;
-        top: 56.2px;
-        left: 50px;
+        .leg-1, .leg-3 {
+            width: 25px;
+            height: 34.3px;
+            position: absolute;
+            border-radius: 0 0 0 9.3px;
+        }
+        .leg-1 {
+            /*Pierna delantera atrás*/
+            top: 123.5px;
+            left: 50px;
+            background-color: $color-foodBack-text;
+        }
+            
+        .leg-3 {
+            background-color: $color-body-legs;
+            top: 56.2px;
+            left: 50px;
+        }
+        .leg-1:before, .leg-1:after{
+            /*pie delantera atras*/
+            position: absolute;
+            content: "";
+            background-color: $color-foodBack-text;
+        }
+        .leg-3:before, .leg-3:after{
+            position: absolute;
+            content: "";
+            background-color: $color-body-legs;
+        }
+        .leg-1:before, .leg-3:before {
+            height: 3.7px;
+            width: 15px;
+            right: 0;
+            bottom: -3.1px;
+        }
+        .leg-1:after, .leg-3:after {
+            height: 12.5px;
+            width: 25px;
+            right: 0;
+            bottom: -15px;
+            border-radius: 12.5px 0 0 0;
+        }
+        .leg-2, .leg-4{
+            width: 37.5px;
+            height: 34.3px;
+            position: absolute;
+            border-radius: 0 0 0 21.8px;
+        }
+        .leg-2{
+            /*pierna trasera atras*/
+            background-color: $color-foodBack-text;
+            left: 125px;
+            top: 123.5px;
+        }
+        .leg-4{
+            background-color: $color-body-legs;
+            left: 125px;
+            top: 56.2px;
+        }
+        .leg-4:before, .leg-4:after{
+            background-color: $color-body-legs;
+            position: absolute;
+            content: "";
+        }
+        .leg-2:before, .leg-2:after{
+            /*pie delantera atras*/
+            background-color: $color-foodBack-text;
+            position: absolute;
+            content: "";
+        }
+        .leg-2:before, .leg-4:before{
+            height: 3.7px;
+            width: 15.6px;
+            right: 0;
+            bottom: -3.1px;
+        }
+        .leg-2:after, .leg-4:after{
+            height: 12.5px;
+            width: 37.5px;
+            right: 0;
+            bottom: -15px;
+            border-radius: 12.5px 0 0 0;
+        }
+        
+        .tail {
+            width: 12.5px;
+            height: 75px;
+            background-color: $color-tail;
+            position: absolute;
+            left: 163px;
+            top: 30px;
+            border-radius: 12.5px 0 0 0;
+        }  
+        .neck {
+            width: 62.5px;
+            height: 19px;
+            background-color: $color-body-legs;
+            position: absolute;
+            top: -18.7px;
+        }  
+        .neck:before {
+            position: absolute;
+            content: "";
+            width: 68.7px;
+            height: 6.2px;
+            background-color: $color-colarBackground;
+            border: 3.7px solid $color-colarBorder;
+            left: -6.2px;
+            top: 6.2px;
+        }  
+        .face {
+            background-color: $color-body-legs;
+            width: 100px;
+            height: 43.7px;
+            position: absolute;
+            left: -37.5px;
+            bottom: 78.1px;
+            border-radius: 0 0 0 43.7px;
+        }
+        .face:before {
+            position: absolute;
+            content: "";
+            width: 62.5px;
+            height: 31.2px;
+            background-color: $color-spotFace-ear-textShadow;
+            border-radius: 0 0 31.2px 31.2px;
+            right: 0;
+        } 
+        .face:after {
+            /*nose*/
+            position: absolute;
+            content: "";
+            height: 9.3px;
+            width: 18.7px;
+            background-color: $black;
+            border-radius: 0 0 9.3px 9.3px;
+            left: -4.3px;
+        } 
+        .ear, .ear:after {
+            position: absolute;
+            width: 15.6px;
+            height: 25px;
+            border-radius: 15.6px 0 0 0;
+        } 
+        .ear {
+            background-color: $color-body-legs;
+            bottom: 122px;
+            right: 112px;
+        } 
+        .ear:after {
+            content: "";
+            background-color: $color-spotFace-ear-textShadow;
+            right: -12px;
+        } 
+        .ear:before {
+            /*eye*/
+            position: absolute;
+            content: "";
+            height: 6.2px;
+            width: 6.2px;
+            background-color: $black;
+            border-radius: 50%;
+            top: 31.2px;
+            left: -12.5px;
+        }
+        .grass{
+            width: 200px;
+            height: 30px;
+            background-color: $color-grass;
+            position: absolute;
+            border-radius: 50px 50px 0 0;
+            bottom: 0;
+        }
     }
-    .leg-1:before, .leg-1:after{
-        /*pie delantera atras*/
-        position: absolute;
-        content: "";
-        background-color: $color-foodBack-text;
-    }
-    .leg-3:before, .leg-3:after{
-        position: absolute;
-        content: "";
-        background-color: $color-body-legs;
-    }
-    .leg-1:before, .leg-3:before {
-        height: 3.7px;
-        width: 15px;
-        right: 0;
-        bottom: -3.1px;
-    }
-    .leg-1:after, .leg-3:after {
-        height: 12.5px;
-        width: 25px;
-        right: 0;
-        bottom: -15px;
-        border-radius: 12.5px 0 0 0;
-    }
-    .leg-2, .leg-4{
-        width: 37.5px;
-        height: 34.3px;
-        position: absolute;
-        border-radius: 0 0 0 21.8px;
-    }
-    .leg-2{
-        /*pierna trasera atras*/
-        background-color: $color-foodBack-text;
-        left: 125px;
-        top: 123.5px;
-    }
-    .leg-4{
-        background-color: $color-body-legs;
-        left: 125px;
-        top: 56.2px;
-    }
-    .leg-4:before, .leg-4:after{
-        background-color: $color-body-legs;
-        position: absolute;
-        content: "";
-    }
-    .leg-2:before, .leg-2:after{
-        /*pie delantera atras*/
-        background-color: $color-foodBack-text;
-        position: absolute;
-        content: "";
-    }
-    .leg-2:before, .leg-4:before{
-        height: 3.7px;
-        width: 15.6px;
-        right: 0;
-        bottom: -3.1px;
-    }
-    .leg-2:after, .leg-4:after{
-        height: 12.5px;
-        width: 37.5px;
-        right: 0;
-        bottom: -15px;
-        border-radius: 12.5px 0 0 0;
-    }
-    
-    .tail {
-        width: 12.5px;
-        height: 75px;
-        background-color: $color-tail;
-        position: absolute;
-        left: 163px;
-        top: 30px;
-        border-radius: 12.5px 0 0 0;
-    }  
-    .neck {
-        width: 62.5px;
-        height: 19px;
-        background-color: $color-body-legs;
-        position: absolute;
-        top: -18.7px;
-    }  
-    .neck:before {
-        position: absolute;
-        content: "";
-        width: 68.7px;
-        height: 6.2px;
-        background-color: $color-colarBackground;
-        border: 3.7px solid $color-colarBorder;
-        left: -6.2px;
-        top: 6.2px;
-    }  
-    .face {
-        background-color: $color-body-legs;
-        width: 100px;
-        height: 43.7px;
-        position: absolute;
-        left: -37.5px;
-        bottom: 78.1px;
-        border-radius: 0 0 0 43.7px;
-    }
-    .face:before {
-        position: absolute;
-        content: "";
-        width: 62.5px;
-        height: 31.2px;
-        background-color: $color-spotFace-ear-textShadow;
-        border-radius: 0 0 31.2px 31.2px;
-        right: 0;
-    } 
-    .face:after {
-        /*nose*/
-        position: absolute;
-        content: "";
-        height: 9.3px;
-        width: 18.7px;
-        background-color: $black;
-        border-radius: 0 0 9.3px 9.3px;
-        left: -4.3px;
-    } 
-    .ear, .ear:after {
-        position: absolute;
-        width: 15.6px;
-        height: 25px;
-        border-radius: 15.6px 0 0 0;
-    } 
-    .ear {
-        background-color: $color-body-legs;
-        bottom: 122px;
-        right: 112px;
-    } 
-    .ear:after {
-        content: "";
-        background-color: $color-spotFace-ear-textShadow;
-        right: -12px;
-    } 
-    .ear:before {
-        /*eye*/
-        position: absolute;
-        content: "";
-        height: 6.2px;
-        width: 6.2px;
-        background-color: $black;
-        border-radius: 50%;
-        top: 31.2px;
-        left: -12.5px;
-    }
-    .grass{
-        width: 200px;
-        height: 30px;
-        background-color: $color-grass;
-        position: absolute;
-        border-radius: 50px 50px 0 0;
-        bottom: 0;
-    }
+
 }
 
 .main-section{
@@ -326,7 +326,7 @@ body {
         background-color: $quaternary-color;
         border-radius: 35px;
         color: white;
-        font-size: 1rem;
+        font-size: 1.5rem;
         transition-duration: 0.3s;
 
         &:hover{
@@ -517,3 +517,70 @@ footer{
     background-color: #e55627;
 }
 
+
+
+/*-------------------------------------------*/
+
+@media  (max-width:600px){
+    body{
+        .nav-bar{
+            width: 100%;
+            height: 150px;
+            
+            .container{
+                right: -20px;
+            }
+        }
+
+        .main-section{
+            .first-article{
+                height: 550px;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                padding: 50px 20px;
+                
+                .impact-section{
+                    text-align: start;
+
+                    p{
+                        text-align: start;
+                    }
+                }
+                .image-section img{
+                    display: none;
+                    
+                }
+            }
+
+            .second-section{
+                width: 100%;
+                height: auto;
+                margin-top: 40px;
+
+                .section-team{
+                    padding-bottom: 60px;
+                    border-bottom: $color-spotFace-ear-textShadow 2px solid;
+                    
+                    .card-section {
+                        @include flex-center(column space-evenly, center);
+                        width: 95vw;
+                    }            
+                }
+
+                .section-offer{
+                    width: 100%;
+                    height: auto;
+                    margin-top: 40px;
+                    
+                    .card-section {
+                        @include flex-center(column space-evenly, center);
+                        width: 95vw;
+                    }            
+                }
+            }
+
+            
+        }
+    }
+}

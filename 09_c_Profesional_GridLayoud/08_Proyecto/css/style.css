@@ -15,7 +15,7 @@ html {
 body {
   margin: 0;
   padding: 0;
-  font-family: "IBM Plex Sans", sans-serif;
+  /*font-family: "IBM Plex Sans", sans-serif;*/
   background-color: #ffe97c;
 }
 
@@ -44,7 +44,7 @@ body {
   scale: 0.5;
   justify-self: end;
 }
-.nav-bar .dog {
+.nav-bar .container .dog {
   width: 162.5px;
   height: 62.5px;
   background-color: #ee9728;
@@ -54,7 +54,7 @@ body {
   left: calc(50% - 5px);
   border-radius: 0 37.5px 0 62.5px;
 }
-.nav-bar .dog-bottom {
+.nav-bar .container .dog-bottom {
   position: absolute;
   width: 162.5px;
   height: 72.5px;
@@ -64,89 +64,89 @@ body {
   left: calc(50% - 5px);
   border-radius: 0 37.5px 0 62.5px;
 }
-.nav-bar .leg-1, .nav-bar .leg-3 {
+.nav-bar .container .leg-1, .nav-bar .container .leg-3 {
   width: 25px;
   height: 34.3px;
   position: absolute;
   border-radius: 0 0 0 9.3px;
 }
-.nav-bar .leg-1 {
+.nav-bar .container .leg-1 {
   /*Pierna delantera atrás*/
   top: 123.5px;
   left: 50px;
   background-color: #e55627;
 }
-.nav-bar .leg-3 {
+.nav-bar .container .leg-3 {
   background-color: #ee9728;
   top: 56.2px;
   left: 50px;
 }
-.nav-bar .leg-1:before, .nav-bar .leg-1:after {
+.nav-bar .container .leg-1:before, .nav-bar .container .leg-1:after {
   /*pie delantera atras*/
   position: absolute;
   content: "";
   background-color: #e55627;
 }
-.nav-bar .leg-3:before, .nav-bar .leg-3:after {
+.nav-bar .container .leg-3:before, .nav-bar .container .leg-3:after {
   position: absolute;
   content: "";
   background-color: #ee9728;
 }
-.nav-bar .leg-1:before, .nav-bar .leg-3:before {
+.nav-bar .container .leg-1:before, .nav-bar .container .leg-3:before {
   height: 3.7px;
   width: 15px;
   right: 0;
   bottom: -3.1px;
 }
-.nav-bar .leg-1:after, .nav-bar .leg-3:after {
+.nav-bar .container .leg-1:after, .nav-bar .container .leg-3:after {
   height: 12.5px;
   width: 25px;
   right: 0;
   bottom: -15px;
   border-radius: 12.5px 0 0 0;
 }
-.nav-bar .leg-2, .nav-bar .leg-4 {
+.nav-bar .container .leg-2, .nav-bar .container .leg-4 {
   width: 37.5px;
   height: 34.3px;
   position: absolute;
   border-radius: 0 0 0 21.8px;
 }
-.nav-bar .leg-2 {
+.nav-bar .container .leg-2 {
   /*pierna trasera atras*/
   background-color: #e55627;
   left: 125px;
   top: 123.5px;
 }
-.nav-bar .leg-4 {
+.nav-bar .container .leg-4 {
   background-color: #ee9728;
   left: 125px;
   top: 56.2px;
 }
-.nav-bar .leg-4:before, .nav-bar .leg-4:after {
+.nav-bar .container .leg-4:before, .nav-bar .container .leg-4:after {
   background-color: #ee9728;
   position: absolute;
   content: "";
 }
-.nav-bar .leg-2:before, .nav-bar .leg-2:after {
+.nav-bar .container .leg-2:before, .nav-bar .container .leg-2:after {
   /*pie delantera atras*/
   background-color: #e55627;
   position: absolute;
   content: "";
 }
-.nav-bar .leg-2:before, .nav-bar .leg-4:before {
+.nav-bar .container .leg-2:before, .nav-bar .container .leg-4:before {
   height: 3.7px;
   width: 15.6px;
   right: 0;
   bottom: -3.1px;
 }
-.nav-bar .leg-2:after, .nav-bar .leg-4:after {
+.nav-bar .container .leg-2:after, .nav-bar .container .leg-4:after {
   height: 12.5px;
   width: 37.5px;
   right: 0;
   bottom: -15px;
   border-radius: 12.5px 0 0 0;
 }
-.nav-bar .tail {
+.nav-bar .container .tail {
   width: 12.5px;
   height: 75px;
   background-color: #e77d21;
@@ -155,14 +155,14 @@ body {
   top: 30px;
   border-radius: 12.5px 0 0 0;
 }
-.nav-bar .neck {
+.nav-bar .container .neck {
   width: 62.5px;
   height: 19px;
   background-color: #ee9728;
   position: absolute;
   top: -18.7px;
 }
-.nav-bar .neck:before {
+.nav-bar .container .neck:before {
   position: absolute;
   content: "";
   width: 68.7px;
@@ -172,7 +172,7 @@ body {
   left: -6.2px;
   top: 6.2px;
 }
-.nav-bar .face {
+.nav-bar .container .face {
   background-color: #ee9728;
   width: 100px;
   height: 43.7px;
@@ -181,7 +181,7 @@ body {
   bottom: 78.1px;
   border-radius: 0 0 0 43.7px;
 }
-.nav-bar .face:before {
+.nav-bar .container .face:before {
   position: absolute;
   content: "";
   width: 62.5px;
@@ -190,7 +190,7 @@ body {
   border-radius: 0 0 31.2px 31.2px;
   right: 0;
 }
-.nav-bar .face:after {
+.nav-bar .container .face:after {
   /*nose*/
   position: absolute;
   content: "";
@@ -200,23 +200,23 @@ body {
   border-radius: 0 0 9.3px 9.3px;
   left: -4.3px;
 }
-.nav-bar .ear, .nav-bar .ear:after {
+.nav-bar .container .ear, .nav-bar .container .ear:after {
   position: absolute;
   width: 15.6px;
   height: 25px;
   border-radius: 15.6px 0 0 0;
 }
-.nav-bar .ear {
+.nav-bar .container .ear {
   background-color: #ee9728;
   bottom: 122px;
   right: 112px;
 }
-.nav-bar .ear:after {
+.nav-bar .container .ear:after {
   content: "";
   background-color: #cd2126;
   right: -12px;
 }
-.nav-bar .ear:before {
+.nav-bar .container .ear:before {
   /*eye*/
   position: absolute;
   content: "";
@@ -227,7 +227,7 @@ body {
   top: 31.2px;
   left: -12.5px;
 }
-.nav-bar .grass {
+.nav-bar .container .grass {
   width: 200px;
   height: 30px;
   background-color: #55bf51;
@@ -287,7 +287,7 @@ body {
   background-color: #FA9500;
   border-radius: 35px;
   color: white;
-  font-size: 1rem;
+  font-size: 1.5rem;
   transition-duration: 0.3s;
 }
 .first-article button:hover {
@@ -460,4 +460,59 @@ footer {
   width: 100%;
   height: 100px;
   background-color: #e55627;
+}
+
+/*-------------------------------------------*/
+@media (max-width: 600px) {
+  body .nav-bar {
+    width: 100%;
+    height: 150px;
+  }
+  body .nav-bar .container {
+    right: -20px;
+  }
+  body .main-section .first-article {
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 50px 20px;
+  }
+  body .main-section .first-article .impact-section {
+    text-align: start;
+  }
+  body .main-section .first-article .impact-section p {
+    text-align: start;
+  }
+  body .main-section .first-article .image-section img {
+    display: none;
+  }
+  body .main-section .second-section {
+    width: 100%;
+    height: auto;
+    margin-top: 40px;
+  }
+  body .main-section .second-section .section-team {
+    padding-bottom: 60px;
+    border-bottom: #cd2126 2px solid;
+  }
+  body .main-section .second-section .section-team .card-section {
+    display: flex;
+    flex-direction: column space-evenly;
+    justify-content: center;
+    align-items: center;
+    width: 95vw;
+  }
+  body .main-section .second-section .section-offer {
+    width: 100%;
+    height: auto;
+    margin-top: 40px;
+  }
+  body .main-section .second-section .section-offer .card-section {
+    display: flex;
+    flex-direction: column space-evenly;
+    justify-content: center;
+    align-items: center;
+    width: 95vw;
+  }
 }/*# sourceMappingURL=style.css.map */

@@ -297,6 +297,7 @@ body {
     padding-right: 45px;
     padding-top: 100px;
     padding-bottom: 100px;
+    gap: 30px;
     @include flex-center(row, space-evenly, center);
     border-bottom: $color-spotFace-ear-textShadow 2px solid;
     
@@ -362,9 +363,9 @@ body {
             width: 95vw;
             height: auto;
             flex-wrap: wrap;
-            column-gap: 200px;
+            column-gap: 50px;
             row-gap: 80px;
-            padding: 100px;/**/
+            padding: 50px;
         }
 
         .product-card {
@@ -514,14 +515,40 @@ body {
 footer{
     width: 100%;
     height: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
     background-color: #e55627;
+
+    .brand-footer{
+        width: 30%;
+
+        font-size: 5rem;
+        color:  $background;
+        justify-self: start;
+        font-family: $font-title;
+        text-shadow: 2px 2px 0px $color-spotFace-ear-textShadow;
+    }
+
+    .icons-footer{
+        width: 30%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        
+        svg{
+            width: 30px;
+            height: 30px;
+        }
+    }
 }
 
 
 
 /*-------------------------------------------*/
 
-@media  (max-width:600px){
+@media  (max-width:800px){
     body{
         .nav-bar{
             width: 100%;
@@ -559,7 +586,7 @@ footer{
                 margin-top: 40px;
 
                 .section-team{
-                    padding-bottom: 60px;
+                    padding-bottom: 40px;
                     border-bottom: $color-spotFace-ear-textShadow 2px solid;
                     
                     .card-section {
@@ -582,5 +609,32 @@ footer{
 
             
         }
+
+        footer{
+            .brand-footer{
+                width: 45%;
+                font-size: 2rem;
+            }
+            .icons-footer{
+                width: 45%;
+            }
+        }
     }
 }
+
+@media  (min-width:801px){
+    body{
+        
+
+        footer{
+            .brand-footer{
+                width: 45%;
+                font-size: 4rem;
+            }
+            .icons-footer{
+                width: 45%;
+            }
+        }
+    }
+}
+

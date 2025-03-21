@@ -1,0 +1,24 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: 'DM Sans', sans-serif;
+}
+.container{
+    display: grid;
+    /*grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3 1fr);
+    grid-template-columns: repeat(3, minmax(200px, 300px));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 300px));
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr))*/
+    grid-template-columns: auto fit-content (800px) auto;
+}
+.item{
+    height: 200px;
+    border: 2px solid pink;
+    background: papayawhip;
+}
